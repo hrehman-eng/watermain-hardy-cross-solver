@@ -24,17 +24,17 @@ Aged pipe (C = 100 vs. 130) barely affects pressure at these flow rates (~1 kPa 
 
 | File | Description |
 |---|---|
-| `Watermain_Network_Input.xlsx` | Input/output workbook — network geometry, demands, design criteria, and results (populated by the MATLAB script) |
-| `hardy_cross_solver.m` | MATLAB solver — reads the workbook, runs all three load cases, writes results back, and generates plots |
+| `Watermain_Network_Input1.xlsx` | Input/output workbook — network geometry, demands, design criteria, and results (populated by the MATLAB script) |
+| `hardy_cross_solver1.m` | MATLAB solver — reads the workbook, runs all three load cases, writes results back, and generates plots |
 
 ## How to run
 
 1. Download both files into the same folder.
-2. Open `hardy_cross_solver.m` in MATLAB (base MATLAB only — no additional toolboxes required) and run it.
+2. Open `hardy_cross_solver1.m` in MATLAB (base MATLAB only — no additional toolboxes required) and run it.
 3. Results are written to the `Results`, `Results_FireFlow`, and `Results_Sensitivity` sheets of the workbook.
 4. Two plots are saved as PNGs: `convergence_history.png` and `pressure_margin_comparison.png`.
 
-To change the network (topology, demands, pipe sizing), edit the yellow-shaded cells in `Node_Data` and `Pipe_Data` — see the `Instructions` sheet for the network diagram and design-criteria reference. Note: the solver's initial flow guess (in `hardy_cross_solver.m`) must satisfy mass balance at every node before the loop-correction iteration starts; if you change demands or topology, re-derive it by hand.
+To change the network (topology, demands, pipe sizing), edit the yellow-shaded cells in `Node_Data` and `Pipe_Data` — see the `Instructions` sheet for the network diagram and design-criteria reference. Note: the solver's initial flow guess (in `hardy_cross_solver1.m`) must satisfy mass balance at every node before the loop-correction iteration starts; if you change demands or topology, re-derive it by hand.
 
 ## Method
 

@@ -19,7 +19,7 @@
 clear; clc; close all;
 
 %% -------------------- USER SETTINGS --------------------
-inputFile       = 'Watermain_Network_Input.xlsx';
+inputFile       = 'Watermain_Network_Input1.xlsx';
 maxIterations   = 50;
 convTol         = 1e-7;      % m^3/s, max |dQ| across all loops
 minPressureAvg  = 275;       % kPa, Ontario MECP min residual, average-day
